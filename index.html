@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>麻績村（おみむら）キッズニュース</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        omi: {
+                            green: '#4ade80', // 自然の緑
+                            blue: '#60a5fa',  // 空の青
+                            accent: '#fbbf24', // 元気な黄色
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Zen Maru Gothic"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Google Fonts for a friendly look -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Zen Maru Gothic', sans-serif;
+            background-color: #f0fdf4; /* Very light green bg */
+        }
+    </style>
+</head>
+<body class="text-slate-700">
+
+    <!-- Header -->
+    <header class="fixed w-full top-0 z-50 bg-white/80 backdrop-blur-md shadow-sm border-b border-omi-green/20">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-green-600 flex items-center gap-2">
+                <span class="text-3xl">🌱</span> 麻績村キッズニュース
+            </h1>
+            <nav class="hidden md:flex gap-6 font-bold text-slate-600">
+                <a href="#" class="hover:text-green-600 transition">ニュース</a>
+                <a href="#" class="hover:text-green-600 transition">村のいいところ</a>
+                <a href="#" class="hover:text-green-600 transition">記者紹介</a>
+                <a href="#" class="bg-green-500 text-white px-4 py-2 rounded-full hover:bg-green-600 transition shadow-md">お問い合わせ</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 px-4">
+        <div class="container mx-auto text-center">
+            <span class="inline-block py-1 px-3 rounded-full bg-yellow-100 text-yellow-800 text-sm font-bold mb-4 border border-yellow-200">
+                小学生がお届けする、村の最新情報！
+            </span>
+            <h2 class="text-4xl md:text-6xl font-black text-slate-800 mb-6 leading-tight">
+                麻績村の<span class="text-green-500">いま</span>を<br>
+                みんなに伝えたい。
+            </h2>
+            <p class="text-lg text-slate-600 mb-10 max-w-2xl mx-auto">
+                長野県のちいさな村、麻績村（おみむら）。<br>
+                ゆたかな自然や、おいしい食べ物、学校での出来事を<br>
+                子供記者が元気いっぱいにレポートします！
+            </p>
+            <div class="flex justify-center gap-4">
+                <a href="#news" class="bg-green-500 text-white px-8 py-4 rounded-full font-bold text-lg shadow-lg hover:bg-green-600 hover:scale-105 transition transform">
+                    ニュースを読む 🗞️
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured News (Grid) -->
+    <section id="news" class="py-20 bg-white rounded-t-[3rem] shadow-inner">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h3 class="text-3xl font-bold text-slate-800 mb-2">最新のニュース</h3>
+                <div class="w-20 h-1 bg-green-400 mx-auto rounded-full"></div>
+                <p class="mt-4 text-slate-500">子供記者が書いた最新の記事をチェック！</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <!-- Article 1 -->
+                <article class="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition border border-slate-100">
+                    <div class="relative h-56 overflow-hidden bg-gray-200">
+                        <!-- Placeholder for nature image -->
+                        <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="麻績村の自然" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                        <span class="absolute top-4 right-4 bg-yellow-400 text-white text-xs font-bold px-3 py-1 rounded-full shadow-md">自然</span>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center gap-2 mb-3 text-sm text-slate-400">
+                            <span>2023.10.25</span>
+                            <span>•</span>
+                            <span>5年 田中記者</span>
+                        </div>
+                        <h4 class="text-xl font-bold text-slate-800 mb-3 group-hover:text-green-600 transition">
+                            聖高原で大きなカブトムシを発見！？
+                        </h4>
+                        <p class="text-slate-600 text-sm line-clamp-3">
+                            昨日の理科の授業で、聖高原に行きました。そこで見たこともないくらい大きなカブトムシを見つけました。先生もびっくりしていました！
+                        </p>
+                        <a href="#" class="inline-block mt-4 text-green-500 font-bold hover:underline">もっと読む →</a>
+                    </div>
+                </article>
+
+                <!-- Article 2 -->
+                <article class="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition border border-slate-100">
+                    <div class="relative h-56 overflow-hidden bg-gray-200">
+                         <!-- Placeholder for food image -->
+                        <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="給食" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                        <span class="absolute top-4 right-4 bg-orange-400 text-white text-xs font-bold px-3 py-1 rounded-full shadow-md">給食</span>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center gap-2 mb-3 text-sm text-slate-400">
+                            <span>2023.10.24</span>
+                            <span>•</span>
+                            <span>6年 佐藤記者</span>
+                        </div>
+                        <h4 class="text-xl font-bold text-slate-800 mb-3 group-hover:text-green-600 transition">
+                            今日の給食は「おやき」が出ました
+                        </h4>
+                        <p class="text-slate-600 text-sm line-clamp-3">
+                            今日は長野県の郷土料理「おやき」が給食に出ました。中身は野沢菜でした。みんなで美味しく食べました。
+                        </p>
+                        <a href="#" class="inline-block mt-4 text-green-500 font-bold hover:underline">もっと読む →</a>
+                    </div>
+                </article>
+
+                <!-- Article 3 -->
+                <article class="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition border border-slate-100">
+                    <div class="relative h-56 overflow-hidden bg-gray-200">
+                        <!-- Placeholder for event image -->
+                        <img src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="お祭り" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                        <span class="absolute top-4 right-4 bg-blue-400 text-white text-xs font-bold px-3 py-1 rounded-full shadow-md">イベント</span>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center gap-2 mb-3 text-sm text-slate-400">
+                            <span>2023.10.20</span>
+                            <span>•</span>
+                            <span>4年 鈴木記者</span>
+                        </div>
+                        <h4 class="text-xl font-bold text-slate-800 mb-3 group-hover:text-green-600 transition">
+                            もうすぐ文化祭！準備が進んでいます
+                        </h4>
+                        <p class="text-slate-600 text-sm line-clamp-3">
+                            来月は麻績小学校の文化祭です。私たちのクラスでは、村の歴史について調べて発表する予定です。
+                        </p>
+                        <a href="#" class="inline-block mt-4 text-green-500 font-bold hover:underline">もっと読む →</a>
+                    </div>
+                </article>
+
+            </div>
+
+            <div class="text-center mt-12">
+                <button class="bg-white border-2 border-green-500 text-green-600 px-8 py-3 rounded-full font-bold hover:bg-green-50 transition shadow-sm">
+                    記事をもっと見る
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reporters Section -->
+    <section class="py-20 bg-green-50">
+        <div class="container mx-auto px-4">
+             <div class="flex flex-col md:flex-row items-center gap-12 bg-green-500 rounded-3xl p-8 md:p-12 shadow-xl text-white">
+                <div class="md:w-1/2">
+                    <h3 class="text-3xl font-bold mb-4">私たちと一緒に記事を書きませんか？</h3>
+                    <p class="mb-6 opacity-90">
+                        麻績村キッズニュースでは、村の魅力を発信してくれる小学生記者を募集しています。<br>
+                        文章を書くのが好きな人、写真を撮るのが好きな人、集まれ！
+                    </p>
+                    <button class="bg-white text-green-600 px-6 py-3 rounded-full font-bold hover:bg-gray-100 transition shadow-lg">
+                        記者に応募する 📝
+                    </button>
+                </div>
+                <div class="md:w-1/2 flex justify-center">
+                    <!-- Illustration placeholder -->
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="w-24 h-24 bg-white/20 rounded-full flex items-center justify-center text-4xl shadow-inner">👦</div>
+                        <div class="w-24 h-24 bg-white/20 rounded-full flex items-center justify-center text-4xl shadow-inner">👧</div>
+                        <div class="w-24 h-24 bg-white/20 rounded-full flex items-center justify-center text-4xl shadow-inner">📷</div>
+                        <div class="w-24 h-24 bg-white/20 rounded-full flex items-center justify-center text-4xl shadow-inner">✏️</div>
+                    </div>
+                </div>
+             </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-800 text-white py-12">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-2xl font-bold mb-6 flex items-center justify-center gap-2">
+                <span>🌱</span> 麻績村キッズニュース
+            </h2>
+            <div class="flex justify-center gap-6 mb-8 text-slate-300">
+                <a href="#" class="hover:text-white transition">ホーム</a>
+                <a href="#" class="hover:text-white transition">ニュース</a>
+                <a href="#" class="hover:text-white transition">プライバシーポリシー</a>
+            </div>
+            <p class="text-slate-500 text-sm">
+                &copy; 2023 Omi Village Kids News. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
