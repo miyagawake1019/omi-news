@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>聖高原スキー場オープン！ - 麻績村（おみむら）キッズニュース</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        omi: {
+                            green: '#4ade80', // 自然の緑
+                            blue: '#60a5fa',  // 空の青
+                            accent: '#fbbf24', // 元気な黄色
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Zen Maru Gothic"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Google Fonts for a friendly look -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Zen Maru Gothic', sans-serif;
+            background-color: #f0fdf4; /* Very light green bg */
+        }
+    </style>
+</head>
+<body class="text-slate-700 flex flex-col min-h-screen">
+
+    <!-- Header -->
+    <header class="fixed w-full top-0 z-50 bg-white/80 backdrop-blur-md shadow-sm border-b border-omi-green/20">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="../index.html" class="text-2xl font-bold text-green-600 flex items-center gap-2">
+                <span class="text-3xl">🌱</span> 麻績村キッズニュース
+            </a>
+            <nav class="hidden md:flex gap-6 font-bold text-slate-600">
+                <a href="../index.html#news" class="hover:text-green-600 transition">ニュース</a>
+                <a href="#" class="hover:text-green-600 transition">村のいいところ</a>
+                <a href="#" class="hover:text-green-600 transition">記者紹介</a>
+                <a href="#" class="bg-green-500 text-white px-4 py-2 rounded-full hover:bg-green-600 transition shadow-md">お問い合わせ</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Article Content -->
+    <main class="flex-grow pt-32 pb-20 px-4">
+        <div class="container mx-auto max-w-3xl bg-white rounded-3xl shadow-xl overflow-hidden">
+            <!-- Hero Image -->
+            <div class="h-64 md:h-96 w-full overflow-hidden relative">
+                <img src="IMG_5268.JPG" alt="聖高原スキー場" class="w-full h-full object-cover">
+                <div class="absolute top-4 right-4 bg-blue-400 text-white text-sm font-bold px-3 py-1 rounded-full shadow-md">スポーツ</div>
+            </div>
+
+            <div class="p-8 md:p-12">
+                <!-- Meta -->
+                <div class="flex items-center gap-4 mb-6 text-slate-400 text-sm">
+                    <span class="flex items-center gap-1">📅 2026.01.14</span>
+                    <span>•</span>
+                    <span class="flex items-center gap-1">✏️ キッズ記者</span>
+                </div>
+
+                <!-- Title -->
+                <h1 class="text-3xl md:text-4xl font-black text-slate-800 mb-8 leading-tight">
+                    聖高原スキー場オープン！
+                </h1>
+
+                <!-- Body -->
+                <div class="text-lg text-slate-600 leading-relaxed space-y-6">
+                    <p>
+                        聖高原スキー場が、13日火曜日にオープンして、久しぶりに1/14日に滑って、ショートカットコース以外すべてのコースが開いていて、楽しく滑れてよかったです。
+                    </p>
+                    <figure>
+                        <img src="IMG_5271.JPG" alt="スキー場の様子" class="rounded-xl w-full shadow-md">
+                        <figcaption class="text-center text-sm text-slate-400 mt-2">楽しいスキーの時間</figcaption>
+                    </figure>
+                </div>
+
+                <!-- Back button -->
+                <div class="mt-12 pt-8 border-t border-slate-100 text-center">
+                    <a href="../index.html" class="inline-block bg-green-100 text-green-700 px-8 py-3 rounded-full font-bold hover:bg-green-200 transition">
+                        ← トップページに戻る
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-800 text-white py-12">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-2xl font-bold mb-6 flex items-center justify-center gap-2">
+                <span>🌱</span> 麻績村キッズニュース
+            </h2>
+            <div class="flex justify-center gap-6 mb-8 text-slate-300">
+                <a href="../index.html" class="hover:text-white transition">ホーム</a>
+                <a href="../index.html#news" class="hover:text-white transition">ニュース</a>
+                <a href="#" class="hover:text-white transition">プライバシーポリシー</a>
+            </div>
+            <p class="text-slate-500 text-sm">
+                &copy; 2023 Omi Village Kids News. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
