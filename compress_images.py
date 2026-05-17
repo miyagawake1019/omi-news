@@ -17,6 +17,7 @@ Options:
 """
 
 import argparse
+import os
 import sys
 from pathlib import Path
 
@@ -76,7 +77,8 @@ def compress_image(path: Path, max_size: int, quality: int, dry_run: bool) -> No
     suffix = f" ({path.name} → {save_path.name})" if save_path != path else ""
     print(f"  {path.name}{suffix}: {original_size//1024}KB → {new_size//1024}KB ({ratio:.0f}% 削減)")
 
-    if save_path != path:
+    # macOS の大文字小文字非区別FSでは .JPG と .jpg が同一ファイルになるため samefile で確認
+    if save_path != path and not os.path.samefile(path, save_path):
         path.unlink()
 
 
