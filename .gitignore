@@ -19,3 +19,10 @@ yarn-error.log
 # Temporary
 tmp/
 temp/
+
+# Images (originals)
+*.heic
+*.HEIC
+
+# Python
+__pycache__/
